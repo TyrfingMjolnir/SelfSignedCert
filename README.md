@@ -10,12 +10,14 @@ The reason for having your SSL cert publicly signed
 
 
 
-# If you need a publicly signed SSL certificate
+# Precaution
+
+## If you need a publicly signed SSL certificate
 In order to prove that you are you, there are many option, my preferred option is: https://github.com/lukas2511/dehydrated
 
 
 
-# If you aim for security of your data follow this procedure
+## If you aim for security of your data follow this procedure
 1) Disconnect computer from internet
 1) Insert SD card to computer
 1) Follow procedure below
