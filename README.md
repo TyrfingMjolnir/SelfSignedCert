@@ -1,5 +1,4 @@
-# SelfSignedCert
-Self signed cert WIP
+# Self signed cert WIP
 
 Work in progress based on: https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html and https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ as the latter is the only blog I have seen focusing on FileMaker security.
 
