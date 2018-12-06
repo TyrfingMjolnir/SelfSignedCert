@@ -10,6 +10,15 @@ The reason for having your SSL cert publicly signed
 1) Authenticate who you are
 
 
+# Proposed procedure
+1) Disconnect computer from internet
+1) Insert SD card to computer
+1) Follow procedure below
+1) Copy only the required files from SD card to your computer
+1) Eject SD card and put in safe
+1) Reconnect your computer to the internet
+
+
 
 This guide is written in a way intended to be string replacable
 
