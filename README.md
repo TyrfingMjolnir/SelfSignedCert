@@ -60,6 +60,18 @@ echo 1000 > serial
 curl -kLo openssl.conf https://jamielinux.com/docs/openssl-certificate-authority/_downloads/root-config.txt
 vim openssl.conf
 ```
+You want to edit the openssl.conf file to match your setup, CommonName is the host name in your domain, regardless of wether that host exists or not. by example
+
+| Common Name | Use case     |
+|-------------|--------------|
+|sn07samba01  | CA           |
+|sn04mta05    | Intermediate |
+|mail2        | server       |
+|www          | server       |
+|fm16s00      | server       |
+|fm16s01      | server       |
+|fm16s02      | server       |
+|fm16s03      | server       |
 
 ## Create the root key
 ```
