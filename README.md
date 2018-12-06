@@ -9,7 +9,13 @@ The reason for having your SSL cert publicly signed
 1) Authenticate who you are
 
 
-# If you aim for security follow this procedure
+
+# If you need a publicly signed SSL certificate
+In order to prove that you are you, there are many option, my preferred option is: https://github.com/lukas2511/dehydrated
+
+
+
+# If you aim for security of your data follow this procedure
 1) Disconnect computer from internet
 1) Insert SD card to computer
 1) Follow procedure below
@@ -17,11 +23,11 @@ The reason for having your SSL cert publicly signed
 1) Eject SD card and put in safe
 1) Reconnect your computer to the internet
 
-
-
 This guide is written in a way intended to be string replacable
 
 `:%s/mymedia/nameOfYourSDCard`
+
+
 
 # Create CA
 ```
