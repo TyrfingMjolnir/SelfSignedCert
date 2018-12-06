@@ -22,6 +22,7 @@ In order to prove that you are you, there are several options, my preferred opti
 1) Insert SD card to computer
 1) Follow procedure below in full
 1) Copy only the required files from SD card to your computer
+1) Sober house rules below
 1) Eject SD card and put in safe
 1) Reconnect your computer to the internet
 
@@ -30,6 +31,7 @@ In order to prove that you are you, there are several options, my preferred opti
 1) Insert SD card to computer
 1) Follow procedure below only the last part: Sign server and client certificates
 1) Copy only the required files from SD card to your computer
+1) Sober house rules below
 1) Eject SD card and put in safe
 1) Reconnect your computer to the internet
 
