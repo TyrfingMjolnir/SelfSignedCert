@@ -58,6 +58,7 @@ touch index.txt
 echo 1000 > serial
 
 curl -kLo openssl.conf https://jamielinux.com/docs/openssl-certificate-authority/_downloads/root-config.txt
+vim openssl.conf
 ```
 
 ## Create the root key
