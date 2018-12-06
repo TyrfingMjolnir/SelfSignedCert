@@ -13,7 +13,7 @@ The reason for having your SSL cert publicly signed
 # Precaution
 
 ## If you need a publicly signed SSL certificate
-In order to prove that you are you, there are many option, my preferred option is: https://github.com/lukas2511/dehydrated
+In order to prove that you are you, there are several options, my preferred option is: https://github.com/lukas2511/dehydrated
 
 
 
