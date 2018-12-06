@@ -40,7 +40,7 @@ Sober house rules dictates copying the SD card to at least 1 more SD Card and ma
 
 
 
-This guide is written in a way intended to be string replacable
+### This guide is written in a way intended to be string replacable
 
 `:%s/mymedia/nameOfYourSDCard`
 
