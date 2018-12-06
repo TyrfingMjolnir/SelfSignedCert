@@ -20,10 +20,21 @@ In order to prove that you are you, there are several options, my preferred opti
 ## If you aim for security of your data follow this procedure
 1) Disconnect computer from internet
 1) Insert SD card to computer
-1) Follow procedure below
+1) Follow procedure below in full
 1) Copy only the required files from SD card to your computer
 1) Eject SD card and put in safe
 1) Reconnect your computer to the internet
+
+### Add a host cert
+1) Disconnect computer from internet
+1) Insert SD card to computer
+1) Follow procedure below only the last part: Sign server and client certificates
+1) Copy only the required files from SD card to your computer
+1) Eject SD card and put in safe
+1) Reconnect your computer to the internet
+
+
+
 
 This guide is written in a way intended to be string replacable
 
