@@ -43,7 +43,7 @@ Sober house rules dictates copying the SD card to at least 1 more SD Card and ma
 ```
 exa -T /Applications/FileMaker\ Pro\ 17\ Advanced/FileMaker\ Pro\ Advanced.app/Contents/Frameworks/Support.framework/Versions/A/Resources/OpenSSL/RootCA/
 /Applications/FileMaker Pro 17 Advanced/FileMaker Pro Advanced.app/Contents/Frameworks/Support.framework/Versions/A/Resources/OpenSSL/RootCA
-└── My Project.int.CA.pem
+└── domain.tld.CA.pem
 ```
 
 
