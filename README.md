@@ -46,7 +46,7 @@ exa -T /Applications/FileMaker\ Pro\ 17\ Advanced/FileMaker\ Pro\ Advanced.app/C
 /Applications/FileMaker Pro 17 Advanced/FileMaker Pro Advanced.app/Contents/Frameworks/Support.framework/Versions/A/Resources/OpenSSL/RootCA
 └── sn07samba01.domain.tld.CA.pem
 ```
-
+I used sn07samba01, you can put ca or nothing in front of the domain, whatever you find less confusing to come back to.
 
 ### This guide is written in a way intended to be string replacable
 
@@ -73,6 +73,7 @@ You want to edit the openssl.conf file to match your setup, CommonName is the ho
 | Common Name | Use case     |
 |-------------|--------------|
 |sn07samba01  | CA           |
+|ca           | CA           |
 |sn04mta05    | Intermediate |
 |mail2        | server       |
 |www09        | server       |
