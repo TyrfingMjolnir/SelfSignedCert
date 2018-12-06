@@ -10,7 +10,7 @@ The reason for having your SSL cert publicly signed
 1) Authenticate who you are
 
 
-# Proposed procedure
+# If you aim for security follow this procedure
 1) Disconnect computer from internet
 1) Insert SD card to computer
 1) Follow procedure below
