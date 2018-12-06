@@ -67,7 +67,7 @@ You want to edit the openssl.conf file to match your setup, CommonName is the ho
 |sn07samba01  | CA           |
 |sn04mta05    | Intermediate |
 |mail2        | server       |
-|www          | server       |
+|www09        | server       |
 |fm16s00      | server       |
 |fm16s01      | server       |
 |fm16s02      | server       |
