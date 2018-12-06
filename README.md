@@ -1,6 +1,6 @@
 # Self signed cert WIP
 
-Work in progress based on: https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html and https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ as the latter is the only blog I have seen focusing on FileMaker security.
+Work in progress based on: https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html and https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ as the latter is the only blog post I have seen focusing on FileMaker security.
 
 The reason for signing your own SSL cert
 1) Security
@@ -8,7 +8,8 @@ The reason for signing your own SSL cert
 The reason for having your SSL cert publicly signed
 1) Authenticate who you are
 
-
+### If you are one of the people thinking it's cheaper to buy a publicly signed certificate, you do not understand security.
+Please read below and find out more.
 
 # Precaution
 
