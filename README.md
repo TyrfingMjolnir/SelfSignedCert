@@ -5,11 +5,11 @@ Work in progress based on: https://jamielinux.com/docs/openssl-certificate-autho
 
 This guide is written in a way intended to be string replacable
 
-`:%s/media/nameOfYourSDCard`
+`:%s/mymedia/nameOfYourSDCard`
 
 # Create CA
 ```
-cd /Volumes/media
+cd /Volumes/mymedia
 
 mkdir ca
 cd ca
@@ -41,7 +41,7 @@ openssl x509 -noout -text -in certs/ca.cert.pem
 
 # Create Intermediate
 ```
-cd /Volumes/media/ca
+cd /Volumes/mymedia/ca
 mkdir intermediate
 cd intermediate
 mkdir certs crl csr newcerts private
@@ -82,7 +82,7 @@ chmod 444 intermediate/certs/ca-chain.cert.pem
 
 # Sign server and client certificates
 ```
-cd /Volumes/media/ca
+cd /Volumes/mymedia/ca
 openssl genrsa -aes256 -out intermediate/private/www.example.com.key.pem 2048
 chmod 400 intermediate/private/www.example.com.key.pem
 
