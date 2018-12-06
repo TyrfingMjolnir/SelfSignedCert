@@ -35,7 +35,8 @@ In order to prove that you are you, there are several options, my preferred opti
 1) Eject SD card and put in safe
 1) Reconnect your computer to the internet
 
-## Sober house rules dictates copying the SD card to at least 1 more SD Card and make sure you make a new backup every 3 years after your last write.
+## Sober house rules
+Sober house rules dictates copying the SD card to at least 1 more SD Card and make sure you make a new backup every 3 years after your last write.
 
 This guide is written in a way intended to be string replacable
 
