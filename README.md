@@ -10,6 +10,7 @@ The reason for having your SSL cert publicly signed
 1) Authenticate who you are
 
 
+
 This guide is written in a way intended to be string replacable
 
 `:%s/mymedia/nameOfYourSDCard`
