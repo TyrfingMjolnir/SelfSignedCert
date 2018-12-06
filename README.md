@@ -21,7 +21,7 @@ In order to prove that you are you, there are several options, my preferred opti
 1) Disconnect computer from internet
 1) Insert SD card to computer
 1) Follow procedure below in full
-1) Copy only the required files from SD card to your computer
+1) Copy only the required files from SD card to your computer( you do not want private keys copied from the SD card unless you are required to use them )
 1) Sober house rules below
 1) Eject SD card and put in safe
 1) Reconnect your computer to the internet
@@ -38,6 +38,13 @@ In order to prove that you are you, there are several options, my preferred opti
 ## Sober house rules
 Sober house rules dictates copying the SD card to at least 1 more SD Card and make sure you make a new backup every 3 years after your last write.
 
+### For FileMaker Pro users
+
+```
+exa -T /Applications/FileMaker\ Pro\ 17\ Advanced/FileMaker\ Pro\ Advanced.app/Contents/Frameworks/Support.framework/Versions/A/Resources/OpenSSL/RootCA/
+/Applications/FileMaker Pro 17 Advanced/FileMaker Pro Advanced.app/Contents/Frameworks/Support.framework/Versions/A/Resources/OpenSSL/RootCA
+└── My Project.int.CA.pem
+```
 
 
 ### This guide is written in a way intended to be string replacable
