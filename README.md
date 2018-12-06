@@ -1,2 +1,98 @@
 # SelfSignedCert
 Self signed cert WIP
+
+Work in progress based on: https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html
+
+This guide is written in a way intended to be string replacable
+
+`:%s/media/nameOfYourSDCard`
+
+# Create CA
+```
+cd /Volumes/media
+
+mkdir ca
+cd ca
+mkdir certs crl newcerts private
+chmod 700 private
+touch index.txt
+echo 1000 > serial
+
+curl -kLo openssl.conf https://jamielinux.com/docs/openssl-certificate-authority/_downloads/root-config.txt
+```
+
+## Create the root key
+```
+openssl genrsa -aes256 -out private/ca.key.pem 4096
+chmod 400 private/ca.key.pem
+```
+
+## Create the root certificate
+```
+openssl req -config openssl.conf -key private/ca.key.pem -new -x509 -days 7300 -sha256 -extensions v3_ca -out certs/ca.cert.pem
+chmod 444 certs/ca.cert.pem
+```
+
+### Verify the root certificate
+```
+openssl x509 -noout -text -in certs/ca.cert.pem
+```
+
+
+# Create Intermediate
+```
+cd /Volumes/media/ca
+mkdir intermediate
+cd intermediate
+mkdir certs crl csr newcerts private
+chmod 700 private
+touch index.txt
+echo 1000 > serial
+echo 1000 > crlnumber
+
+cp ../openssl.conf ./
+
+openssl genrsa -aes256 -out intermediate/private/intermediate.key.pem 4096
+chmod 400 intermediate/private/intermediate.key.pem
+```
+
+# Create the intermediate certificate
+```
+openssl req -config openssl.cnf -new -sha256 -key private/intermediate.key.pem -out csr/intermediate.csr.pem
+
+cd ..
+
+openssl ca -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem
+chmod 444 intermediate/certs/intermediate.cert.pem
+```
+
+### Verify the intermediate certificate
+```
+openssl x509 -noout -text -in intermediate/certs/intermediate.cert.pem
+openssl verify -CAfile certs/ca.cert.pem intermediate/certs/intermediate.cert.pem
+```
+
+## Create the certificate chain file
+```
+cat intermediate/certs/intermediate.cert.pem certs/ca.cert.pem > intermediate/certs/ca-chain.cert.pem
+chmod 444 intermediate/certs/ca-chain.cert.pem
+```
+
+
+
+# Sign server and client certificates
+```
+cd /Volumes/media/ca
+openssl genrsa -aes256 -out intermediate/private/www.example.com.key.pem 2048
+chmod 400 intermediate/private/www.example.com.key.pem
+
+openssl req -config intermediate/openssl.cnf -key intermediate/private/www.example.com.key.pem -new -sha256 -out intermediate/csr/www.example.com.csr.pem
+openssl ca -config intermediate/openssl.cnf -extensions server_cert -days 375 -notext -md sha256 -in intermediate/csr/www.example.com.csr.pem -out intermediate/certs/www.example.com.cert.pem
+chmod 444 intermediate/certs/www.example.com.cert.pem
+```
+
+### Verify the certificate
+```
+openssl x509 -noout -text -in intermediate/certs/www.example.com.cert.pem
+openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/www.example.com.cert.pem
+```
