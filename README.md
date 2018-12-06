@@ -3,6 +3,13 @@ Self signed cert WIP
 
 Work in progress based on: https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html and https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ as the latter is the only blog I have seen focusing on FileMaker security.
 
+The reason for signing your own SSL cert
+1) Security
+
+The reason for having your SSL cert publicly signed
+1) Authenticate who you are
+
+
 This guide is written in a way intended to be string replacable
 
 `:%s/mymedia/nameOfYourSDCard`
