@@ -8,8 +8,8 @@ The reason for signing your own SSL cert
 The reason for having your SSL cert publicly signed
 1) Authenticate who you are
 
-### If you are one of the people thinking it's cheaper to buy a publicly signed certificate, you do not understand security.
-Please read below and find out more.
+### If you are one of the people thinking it's cheaper to buy a publicly signed certificate
+Chances are you do not understand security; Please read below and find out more.
 
 # Precaution
 
