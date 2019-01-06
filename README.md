@@ -174,11 +174,17 @@ As a general example
 openssl req -config intermediate/openssl.conf -key intermediate/private/www.example.com.key.pem -new -sha256 -out intermediate/csr/www.example.com.csr.pem
 openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in intermediate/csr/www.example.com.csr.pem -out intermediate/certs/www.example.com.cert.pem
 ```
-What you really want to do
+What you really want to do for the case discussed above
 ```
-openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in serverRequest.pem -out intermediate/certs/tld.domain.star.cert.pem
+openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in fm16s00/serverRequest.pem -out intermediate/certs/tld.domain.fm16s00.cert.pem
+openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in fm16s00/serverRequest.pem -out intermediate/certs/tld.domain.fm16s01.cert.pem
+openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in fm16s00/serverRequest.pem -out intermediate/certs/tld.domain.fm16s02.cert.pem
+openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in fm16s00/serverRequest.pem -out intermediate/certs/tld.domain.fm16s03.cert.pem
 
-chmod 444 intermediate/certs/www.example.com.cert.pem
+chmod 444 intermediate/certs/tld.domain.fm16s00.cert.pem
+chmod 444 intermediate/certs/tld.domain.fm16s01.cert.pem
+chmod 444 intermediate/certs/tld.domain.fm16s02.cert.pem
+chmod 444 intermediate/certs/tld.domain.fm16s03.cert.pem
 ```
 
 ### Verify the certificate
@@ -191,7 +197,10 @@ openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/w
 
 ## Command line interface
 ```
-cp /Volumes/mymedia/intermediate/certs/tld.domain.star.cert.pem /Library/FileMaker\ Server/CStore/
+cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s00.cert.pem /Library/FileMaker\ Server/CStore/
+cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s01.cert.pem /Library/FileMaker\ Server/CStore/
+cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s02.cert.pem /Library/FileMaker\ Server/CStore/
+cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s03.cert.pem /Library/FileMaker\ Server/CStore/
 cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/
 
 fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.star.cert.pem" \
@@ -202,7 +211,10 @@ fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.star.c
 ## Web interface
 | File | Location( if you followed the recipe above ) |
 |:-|:-|
-|Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.star.cert.pem |
+|Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem |
+|Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.fm16s01.cert.pem |
+|Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.fm16s02.cert.pem |
+|Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.fm16s03.cert.pem |
 |Private key file | /Library/FileMaker\ Server/CStore/serverKey.pem |
 |Intermediate certificate file | /Library/FileMaker\ Server/CStore/intermediate.cert.pem |
 
