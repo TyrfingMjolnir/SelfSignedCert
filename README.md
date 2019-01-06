@@ -142,7 +142,7 @@ openssl req -config openssl.conf -new -sha256 -key private/intermediate.key.pem 
 
 cd ..
 
-openssl ca -config openssl.conf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem
+openssl ca -config openssl.conf -extensions v3_intermediate_ca -days 7300 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem
 chmod 444 intermediate/certs/intermediate.cert.pem
 ```
 
@@ -169,7 +169,7 @@ openssl genrsa -aes256 -out intermediate/private/www.example.com.key.pem 2048
 chmod 400 intermediate/private/www.example.com.key.pem
 
 openssl req -config intermediate/openssl.conf -key intermediate/private/www.example.com.key.pem -new -sha256 -out intermediate/csr/www.example.com.csr.pem
-openssl ca -config intermediate/openssl.conf -extensions server_cert -days 375 -notext -md sha256 -in intermediate/csr/www.example.com.csr.pem -out intermediate/certs/www.example.com.cert.pem
+openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in intermediate/csr/www.example.com.csr.pem -out intermediate/certs/www.example.com.cert.pem
 chmod 444 intermediate/certs/www.example.com.cert.pem
 ```
 
