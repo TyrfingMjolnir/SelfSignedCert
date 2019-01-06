@@ -181,6 +181,8 @@ openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/w
 ```
 $ cp /Volumes/mymedia/tld.domain.fm16s00_cert.cer /Volumes/mymedia/tld.domain.fm16s00_interm.cer \
   /Library/FileMaker\ Server/CStore/
+$ cp 
+$ cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/tld.domain.fm16s00_interm.cer
 
 $ fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_cert.cer" \
   --intermediateCA "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_interm.cer" \
