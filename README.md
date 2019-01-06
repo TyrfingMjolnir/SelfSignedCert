@@ -190,12 +190,10 @@ openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/w
 # Deploying the newly signed certificate in FileMaker 16 Server
 
 ```
-$ cp /Volumes/mymedia/tld.domain.fm16s00_cert.cer /Volumes/mymedia/tld.domain.fm16s00_interm.cer \
-  /Library/FileMaker\ Server/CStore/
-$ cp 
-$ cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/tld.domain.fm16s00_interm.cer
+cp /Volumes/mymedia/intermediate/certs/tld.domain.star.cert.pem /Library/FileMaker\ Server/CStore/
+cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/tld.domain.fm16s00_interm.cert.pem
 
-$ fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_cert.cer" \
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_cert.cer" \
   --intermediateCA "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_interm.cer" \
   --keyfilepass <secret> 
 ```
