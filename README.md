@@ -23,7 +23,7 @@ In order to prove that you are you, there are several options, my preferred opti
 
 Example dehydrated config file
 ```
-domain.tld fm16s03.domain.tld fm16s02.domain.tld fm16s01.domain.tld fm16s00.domain.tld fm16s00.domain.tld www.domain.tld mail.domain.tld api.domain.tld ws01.domain.tld ws02.domain.tld ws.domain.tld soap01.domain.tld soap02.domain.tld soap03.domain.tld soap04.domain.tld soap05.domain.tld soap.domain.tld
+domain.tld fm16s03.domain.tld fm16s02.domain.tld fm16s01.domain.tld fm16s00.domain.tld fm16s00.domain.tld www01.domain.tld www02.domain.tld www03.domain.tld www04.domain.tld www.domain.tld mta01.domain.tld mta02.domain.tld mta03.domain.tld mta.domain.tld mail.domain.tld api.domain.tld ws01.domain.tld ws02.domain.tld ws.domain.tld soap01.domain.tld soap02.domain.tld soap03.domain.tld soap04.domain.tld soap05.domain.tld soap.domain.tld
 ```
 Note that you will have to have a public facing service on port 80 where dehydrated has access to publish temp files
 
