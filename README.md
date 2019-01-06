@@ -129,7 +129,7 @@ echo 1000 > crlnumber
 
 curl -kLo openssl.conf https://jamielinux.com/docs/openssl-certificate-authority/_downloads/intermediate-config.txt
 
-openssl genrsa -aes256 -out intermediate/private/intermediate.key.pem 4096
+openssl genrsa -aes256 -out private/intermediate.key.pem 4096
 chmod 400 intermediate/private/intermediate.key.pem
 ```
 
