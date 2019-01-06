@@ -215,21 +215,21 @@ fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s0
 
 ### fm16s01
 ```
-fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s01.cert.pem" \
   --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
   --keyfilepass <secret> 
 ```
 
 ### fm16s02
 ```
-fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s02.cert.pem" \
   --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
   --keyfilepass <secret> 
 ```
 
 ### fm16s03
 ```
-fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s03.cert.pem" \
   --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
   --keyfilepass <secret> 
 ```
