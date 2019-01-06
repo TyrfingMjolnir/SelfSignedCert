@@ -58,10 +58,16 @@ I used sn07samba01, you can put ca or nothing in front of the domain, whatever y
 # Extracting the CSR from FileMaker 16 Server
 
 ```
-fmsadmin certificate create "/CN=fm16s00.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
-fmsadmin certificate create "/CN=fm16s01.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
-fmsadmin certificate create "/CN=fm16s02.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
-fmsadmin certificate create "/CN=fm16s03.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
+$ fmsadmin certificate create "/CN=fm16s00.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
+$ fmsadmin certificate create "/CN=fm16s01.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
+$ fmsadmin certificate create "/CN=fm16s02.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
+$ fmsadmin certificate create "/CN=fm16s03.domain.tld/O=Organization/C=US/ST=State" --keyfilepass <secret>
+
+$ exa -T /Library/FileMaker\ Server/CStore/
+/Library/FileMaker Server/CStore/
+├── serverKey.pem 
+├── serverRequest.pem
+└── ...
 ```
 
 # Create CA
