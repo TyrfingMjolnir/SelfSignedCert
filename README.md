@@ -111,7 +111,7 @@ touch index.txt
 echo 1000 > serial
 echo 1000 > crlnumber
 
-cp ../openssl.conf ./
+curl -kLo openssl.conf https://jamielinux.com/docs/openssl-certificate-authority/_downloads/intermediate-config.txt
 
 openssl genrsa -aes256 -out intermediate/private/intermediate.key.pem 4096
 chmod 400 intermediate/private/intermediate.key.pem
@@ -126,6 +126,8 @@ cd ..
 openssl ca -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem
 chmod 444 intermediate/certs/intermediate.cert.pem
 ```
+
+Note I had to edit the openssl.cnf for the root as follows: `commonName optional` to make this work.
 
 ### Verify the intermediate certificate
 ```
