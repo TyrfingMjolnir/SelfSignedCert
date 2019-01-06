@@ -19,6 +19,8 @@ Chances are you do not understand security; Please read below and find out more.
 ## If you need a publicly signed SSL certificate
 In order to prove that you are you, there are several options, my preferred option is to run this shell based Let's encrypt approach: https://github.com/lukas2511/dehydrated works fine from LaunchDaemon, Manifold, systemd, or crontab
 
+If you have only 1 - one FileMaker server you may want to use this for public signing: https://bluefeathergroup.com/blog/lets-encrypt-ssl-certificates-for-filemaker-server-for-mac/
+
 ## If you aim for security of your data follow this procedure
 1) Disconnect computer from internet
 1) Insert SD card to computer
