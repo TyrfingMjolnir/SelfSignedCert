@@ -1,6 +1,9 @@
 # Self signed SSL certificate for use with FileMaker 16 Server and other services such as MTA, web; such as SOAP, REST, GraphQL WIP
 
-Work in progress based on: https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html and https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ as the latter is the only blog post I have seen focusing on FileMaker security.
+Work in progress based on
+1) https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html
+1) https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ 
+1) http://kb.mit.edu/confluence/display/istcontrib/FileMaker+Server+SSL+Certificates
 
 The reason for signing your own SSL cert
 1) Security
