@@ -205,3 +205,9 @@ fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.star.c
 |Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.star.cert.pem |
 |Private key file | /Library/FileMaker\ Server/CStore/serverKey.pem |
 |Intermediate certificate file | /Library/FileMaker\ Server/CStore/intermediate.cert.pem |
+
+# Deploy your self signed root CA to the newly signed certificate for FileMaker 16 Pro \[ Advanced \]
+## This is a trick to avoid having to suppress that the self signed certificate is not verified by a 3rd party.
+```
+cp /Volumes/mymedia/ca/certs/ca.cert.pem /Applications/FileMaker\ Pro\ 16\ Advanced/FileMaker\ Pro\ Advanced.app/Contents/Frameworks/Support.framework/Resources/OpenSSL/RootCA/
+```
