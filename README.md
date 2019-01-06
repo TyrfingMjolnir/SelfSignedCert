@@ -1,6 +1,8 @@
-# Self signed SSL certificate for use with FileMaker 16 Server and other services such as MTA, web; such as SOAP, REST, GraphQL WIP
+# Self signed SSL certificate for use with FileMaker 16 Server.
 
-Work in progress based on
+Wow! A way to sign a certificate for free !!! Somebody texted me. It's not about "for free," this is a choice to make, sign yourself, or sign publicly.
+
+Based on
 1) https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html
 1) https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ 
 1) http://kb.mit.edu/confluence/display/istcontrib/FileMaker+Server+SSL+Certificates
