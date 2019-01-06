@@ -1,6 +1,6 @@
 # Self signed SSL certificate for use with FileMaker 16 Server.
 
-Wow! A way to sign a certificate for free !!! Somebody texted me. It's not about "for free," this is a choice to make, sign yourself, or sign publicly. If you have any respect for your data, you do self signed, but doing so you remove a pletora of potential bottle necks.
+"Wow! A way to sign a certificate for free !!!" Somebody texted me. It's not about "for free," this is a choice to make, sign yourself, or sign publicly. If you have any respect for your data, you do self signed, but doing so you remove a pletora of potential bottle necks.
 
 Based on
 1) https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html
