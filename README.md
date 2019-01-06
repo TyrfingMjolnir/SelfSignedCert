@@ -175,3 +175,11 @@ chmod 444 intermediate/certs/www.example.com.cert.pem
 openssl x509 -noout -text -in intermediate/certs/www.example.com.cert.pem
 openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/www.example.com.cert.pem
 ```
+
+# Deploying the newly signed certificate in FileMaker 16 Server
+
+```
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_cert.cer" \
+  --intermediateCA "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00_interm.cer" \
+  --keyfilepass <secret> 
+```
