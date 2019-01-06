@@ -55,7 +55,11 @@ I used sn07samba01, you can put ca or nothing in front of the domain, whatever y
 
 `:%s/mymedia/nameOfYourSDCard`
 
+# Extracting the CSR from FileMaker 16 Server
 
+```
+fmsadmin certificate create "/CN=<your FQDN>/O=MIT/C=US/ST=Massachusetts" --keyfilepass <secret>
+```
 
 # Create CA
 ```
