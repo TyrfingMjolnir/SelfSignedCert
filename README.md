@@ -168,9 +168,16 @@ chmod 444 intermediate/certs/ca-chain.cert.pem
 cd /Volumes/mymedia/ca
 openssl genrsa -aes256 -out intermediate/private/www.example.com.key.pem 2048
 chmod 400 intermediate/private/www.example.com.key.pem
-
+```
+As a general example
+```
 openssl req -config intermediate/openssl.conf -key intermediate/private/www.example.com.key.pem -new -sha256 -out intermediate/csr/www.example.com.csr.pem
 openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in intermediate/csr/www.example.com.csr.pem -out intermediate/certs/www.example.com.cert.pem
+```
+What you really want to do
+```
+openssl ca -config intermediate/openssl.conf -extensions server_cert -days 7300 -notext -md sha256 -in serverRequest.pem -out intermediate/certs/tld.domain.star.cert.pem
+
 chmod 444 intermediate/certs/www.example.com.cert.pem
 ```
 
