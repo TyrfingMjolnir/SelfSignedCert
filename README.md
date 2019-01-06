@@ -8,7 +8,7 @@ Based on
 1) http://kb.mit.edu/confluence/display/istcontrib/FileMaker+Server+SSL+Certificates
 
 The reason for signing your own SSL cert
-1) Security
+1) Secure transfer of your data between client and server
 
 The reason for having your SSL cert publicly signed
 1) Authenticate who you are
