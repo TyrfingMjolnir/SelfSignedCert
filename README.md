@@ -21,6 +21,12 @@ Chances are you do not understand security; Please read below and find out more.
 ## If you need a publicly signed SSL certificate
 In order to prove that you are you, there are several options, my preferred option is to run this shell based Let's encrypt approach: https://github.com/lukas2511/dehydrated works fine from LaunchDaemon, Manifold, systemd, or crontab
 
+Example dehydrated config file
+```
+domain.tld fm16s03.domain.tld fm16s02.domain.tld fm16s01.domain.tld fm16s00.domain.tld fm16s00.domain.tld www.domain.tld mail.domain.tld api.domain.tld ws01.domain.tld ws02.domain.tld ws.domain.tld soap01.domain.tld soap02.domain.tld soap03.domain.tld soap04.domain.tld soap05.domain.tld soap.domain.tld
+```
+Note that you will have to have a public facing service on port 80 where dehydrated has access to publish temp files
+
 If you have only 1 - one FileMaker server you may want to use this for public signing: https://bluefeathergroup.com/blog/lets-encrypt-ssl-certificates-for-filemaker-server-for-mac/
 
 ## If you aim for security of your data follow this procedure
