@@ -135,11 +135,11 @@ chmod 400 private/intermediate.key.pem
 
 # Create the intermediate certificate
 ```
-openssl req -config openssl.cnf -new -sha256 -key private/intermediate.key.pem -out csr/intermediate.csr.pem
+openssl req -config openssl.conf -new -sha256 -key private/intermediate.key.pem -out csr/intermediate.csr.pem
 
 cd ..
 
-openssl ca -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem
+openssl ca -config openssl.conf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem
 chmod 444 intermediate/certs/intermediate.cert.pem
 ```
 
