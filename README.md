@@ -189,6 +189,7 @@ openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/w
 
 # Deploying the newly signed certificate in FileMaker 16 Server
 
+## Command line interface
 ```
 cp /Volumes/mymedia/intermediate/certs/tld.domain.star.cert.pem /Library/FileMaker\ Server/CStore/
 cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/
@@ -197,3 +198,10 @@ fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.star.c
   --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
   --keyfilepass <secret> 
 ```
+
+## Web interface
+| File | Location( if you followed the recipe above ) |
+|:-|:-|
+|Signed certificate file | /Library/FileMaker\ Server/CStore/tld.domain.star.cert.pem |
+|Private key file | /Library/FileMaker\ Server/CStore/serverKey.pem |
+|Intermediate certificate file | /Library/FileMaker\ Server/CStore/intermediate.cert.pem |
