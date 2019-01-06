@@ -202,8 +202,34 @@ cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s01.cert.pem /Library/File
 cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s02.cert.pem /Library/FileMaker\ Server/CStore/
 cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s03.cert.pem /Library/FileMaker\ Server/CStore/
 cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/
+```
 
-fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.star.cert.pem" \
+##For each server you would like to run the following
+
+### fm16s00
+```
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
+  --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
+  --keyfilepass <secret> 
+```
+
+### fm16s01
+```
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
+  --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
+  --keyfilepass <secret> 
+```
+
+### fm16s02
+```
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
+  --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
+  --keyfilepass <secret> 
+```
+
+### fm16s03
+```
+fmsadmin certificate import "/Library/FileMaker\ Server/CStore/tld.domain.fm16s00.cert.pem" \
   --intermediateCA "/Library/FileMaker\ Server/CStore/intermediate.cert.pem" \
   --keyfilepass <secret> 
 ```
