@@ -17,9 +17,8 @@ Chances are you do not understand security; Please read below and find out more.
 # Precaution
 
 ## If you need a publicly signed SSL certificate
-In order to prove that you are you, there are several options, my preferred option is: https://github.com/lukas2511/dehydrated
-
-
+In order to prove that you are you, there are several options,
+my preferred option is: https://github.com/lukas2511/dehydrated
 
 ## If you aim for security of your data follow this procedure
 1) Disconnect computer from internet
