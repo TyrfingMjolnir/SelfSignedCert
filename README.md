@@ -212,7 +212,7 @@ cp /Volumes/mymedia/intermediate/certs/tld.domain.fm16s03.cert.pem /Library/File
 cp /Volumes/mymedia/intermediate/certs/intermediate.cert.pem /Library/FileMaker\ Server/CStore/
 ```
 
-##For each server you would like to run the following
+## For each server you would like to run the following
 
 ### fm16s00
 ```
