@@ -2,7 +2,7 @@
 
 "Wow! A way to sign a certificate for free !!!" Somebody texted me. It's not about "for free," this is a choice to make, you have 2 options 1) sign yourself, or 2) sign publicly. If you have any respect for your data, you do self signed, but doing so you remove a pletora of potential bottle necks and security holes.
 
-Inspired by the following:
+Inspired by the following; however not limited to:
 1) https://jamielinux.com/docs/openssl-certificate-authority/sign-server-and-client-certificates.html
 1) https://blog.beezwax.net/2017/12/03/creating-your-own-ssl-certificates-for-filemaker/ 
 1) http://kb.mit.edu/confluence/display/istcontrib/FileMaker+Server+SSL+Certificates
