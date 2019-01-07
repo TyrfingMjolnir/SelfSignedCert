@@ -262,4 +262,4 @@ cp /Volumes/mymedia/ca/certs/ca.cert.pem /Applications/FileMaker\ Pro\ 16\ Advan
 ```
 
 ### For Windows
-Please send do a PR if you know how to do this for FileMaker on Windows.
+Please send do a PR if you know how to do this for FileMaker on Windows. From DDG I found this: http://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx not sure if it's best practice, there are many screen shots.
